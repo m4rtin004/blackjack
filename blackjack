@@ -1,0 +1,303 @@
+
+
+
+
+
+
+
+
+import time
+from random import randint
+
+def print_card(card_number):
+  time.sleep(2)
+  
+  if card_number==1:
+    print("\033[91m_____________________")
+    print("|                    |")
+    print("|         /\         |")
+    print("|        /__\        |")
+    print("|       /    \       |")
+    print("|                    |")
+    print("|                    |")
+    print("|        ace         |")
+    print("|                    |")
+    print("|                    |")
+    print("|                    |")
+    print("|____________________|")
+
+
+
+    
+  if card_number==2:
+    print("\033[91m_____________________")
+    print("|      ____          |   ")
+    print("|          |         |  ")
+    print("|         /          | ")
+    print("|       /___         | ")
+    print("|                    |")
+    print("|                    | ")
+    print("|       two          |  ")
+    print("|                    | ")
+    print("|                    | ")
+    print("|                    |  ")
+    print("|____________________|")
+    
+  if card_number==3:
+    print("\033[91m_____________________")
+    print("|      ____          |    ")
+    print("|          |         |  ")
+    print("|       ___|         |  ")
+    print("|          |         |")
+    print("|       ----         |   ")
+    print("|                    | ")
+    print("|       three        |")
+    print("|                    |")
+    print("|                    |")
+    print("|                    | ")
+    print("|____________________|")
+    
+  if card_number==4:
+    print("\033[91m_____________________")
+    print("|                    |    ")
+    print("|      |             |  ")
+    print("|      |__|__        |  ")
+    print("|         |          |")
+    print("|                    |   ")
+    print("|                    | ")
+    print("|       four         |")
+    print("|                    |")
+    print("|                    |")
+    print("|                    | ")
+    print("|____________________|")
+    
+  if card_number==5:
+    print("\033[91m_____________________")
+    print("|       ____         |    ")
+    print("|      |             |  ")
+    print("|      |____         |  ")
+    print("|          |         |")
+    print("|       ___|         |   ")
+    print("|                    | ")
+    print("|       five         |")
+    print("|                    |")
+    print("|                    |")
+    print("|                    | ")
+    print("|____________________|")
+    
+  if card_number==6:
+    print("\033[91m_____________________")
+    print("|       ____         |    ")
+    print("|      |             |  ")
+    print("|      |____         |  ")
+    print("|      |    |        |")
+    print("|      |____|        |   ")
+    print("|                    | ")
+    print("|       six          |")
+    print("|                    |")
+    print("|                    |")
+    print("|                    | ")
+    print("|____________________|")
+    
+  if card_number==7:
+    print("\033[91m_____________________")
+    print("|       ____         |    ")
+    print("|          |         |  ")
+    print("|          |         |  ")
+    print("|          |         |")
+    print("|                    |   ")
+    print("|                    | ")
+    print("|       seven        |")
+    print("|                    |")
+    print("|                    |")
+    print("|                    | ")
+    print("|____________________|")
+    
+  if card_number==8:
+    print("\033[91m_____________________")
+    print("|       ____         |    ")
+    print("|      |    |        |  ")
+    print("|      |____|        |  ")
+    print("|      |    |        |")
+    print("|      |____|        |   ")
+    print("|                    | ")
+    print("|       eight        |")
+    print("|                    |")
+    print("|                    |")
+    print("|                    | ")
+    print("|____________________|")
+    
+  if card_number==9:
+    print("\033[91m_____________________")
+    print("|       ____         |    ")
+    print("|      |    |        |  ")
+    print("|      |____|        |  ")
+    print("|           |        |")
+    print("|           |        |   ")
+    print("|                    | ")
+    print("|       nine         |")
+    print("|                    |")
+    print("|                    |")
+    print("|                    | ")
+    print("|____________________|")
+    
+  if card_number==10:
+    print("\033[91m_____________________")
+    print("|         ____       |    ")
+    print("|     |  |    |      |  ")
+    print("|     |  |    |      |  ")
+    print("|     |  |    |      |")
+    print("|     |  |____|      |   ")
+    print("|                    | ")
+    print("|       ten          |")
+    print("|                    |")
+    print("|                    |")
+    print("|                    | ")
+    print("|____________________|")
+    
+  if card_number==11:
+    print("\033[91m_____________________")
+    print("|       _______      |    ")
+    print("|          |         |  ")
+    print("|          |         |  ")
+    print("|      |   |         |")
+    print("|       \ __         |   ")
+    print("|                    | ")
+    print("|         jack       |")
+    print("|                    |")
+    print("|                    |")
+    print("|                    | ")
+    print("|____________________|")
+    
+  if card_number==12:
+    print("\033[91m_____________________")
+    print("|       ____         |    ")
+    print("|      |    |        |  ")
+    print("|      |    |        |  ")
+    print("|      |   \|        |")
+    print("|      |____|\       |   ")
+    print("|                    | ")
+    print("|       queen        |")
+    print("|                    |")
+    print("|                    |")
+    print("|                    | ")
+    print("|____________________|")
+    
+  if card_number==13:  
+    print("\033[91m_____________________")
+    print("|                    |    ")
+    print("|      | /           |  ")
+    print("|      |/            |  ")
+    print("|      |\            |")
+    print("|      | \           |   ")
+    print("|                    | ")
+    print("|     king           |")
+    print("|                    |")
+    print("|                    |")
+    print("|                    | ")
+    print("|____________________|")
+
+def print_hand(card_list):
+  for card_number in card_list:
+    print_card(card_number)
+  
+
+def stick_or_twist(player_hand):
+  did_stick=False
+  valid_choice=False
+  while not valid_choice:
+    stick_or_twist=input("would you like to stick or twist??   ")
+    if stick_or_twist=="twist" or stick_or_twist=="Twist":
+      next_card_numb=randint(1,13)
+      print("your next card....")
+      print_card(next_card_numb)
+      player_hand.append(next_card_numb)
+      valid_choice=True
+    elif stick_or_twist=="stick" or stick_or_twist=="Stick":
+      print("ok")
+      did_stick=True
+      valid_choice=True
+    else:
+      print("your response is invalid")
+    return did_stick
+
+def calculate_total(hand):
+  total=0
+  ace_count=0
+  for card_count in hand:
+   if card_count==1:
+    total+=11
+    ace_count+=1
+   elif card_count<10:
+    total+=card_count
+   else:
+    total+=10
+   while total>21 and ace_count>0:
+    total-=10
+    ace_count-=1
+  return total
+
+print("this is the dealers first card")
+dealer_card_one=randint(1,13)
+dealer_card_one_list=[dealer_card_one]
+dealer_hand=[dealer_card_one,randint(1,13)]
+print_hand(dealer_card_one_list)
+time.sleep(2)
+
+
+print("your cards are...")
+player_hand=[randint(1,13),randint(1,13)]
+print_hand(player_hand)
+
+
+
+
+did_stick=False
+hand_total=calculate_total(player_hand)
+while not did_stick and hand_total<=21:
+ did_stick=stick_or_twist(player_hand)
+ hand_total=calculate_total(player_hand)
+
+else:
+  print("you stuck on ",hand_total)
+  time.sleep(1)
+if hand_total>21:
+  print("game over You are bust")
+  time.sleep(2)
+  exit()
+
+
+print("the dealers hand is....")
+did_stick=False
+hand_total_of_dealer=calculate_total(dealer_hand)
+while not did_stick and hand_total_of_dealer<=21:
+  if  hand_total_of_dealer<16:
+     dealer_hand.append(randint(1,13))
+     hand_total_of_dealer=calculate_total(dealer_hand)
+  else:
+     did_stick=True
+
+
+hand_total_of_dealer=calculate_total(dealer_hand)
+if hand_total_of_dealer>21:
+ print("you win the dealer is bust")
+ time.sleep(2)
+ hand_total_of_dealer=1
+
+
+
+print_hand(dealer_hand)
+print(hand_total_of_dealer)
+
+
+if hand_total_of_dealer>= hand_total:
+  win_or_loss="     loss"
+  print("you lost")
+
+else:
+  win_or_loss="     win"
+  print("you won yipeee")
+
+f = open('game_score.txt',"a") # Open file on read mode
+score = f.write(win_or_loss) # Write to file
+f.close() # Close file
